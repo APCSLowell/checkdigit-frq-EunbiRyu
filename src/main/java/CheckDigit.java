@@ -13,7 +13,6 @@ public class CheckDigit
      for(int i=digits; i>=1; i--){
        int selected = getDigit(num, (8-i));
        sum += selected*i;
-       count++;
      }
      return sum%10;
    }
