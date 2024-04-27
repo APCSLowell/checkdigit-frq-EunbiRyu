@@ -9,10 +9,9 @@ public class CheckDigit
    {  
      /* to be implemented in part (a) */
      int digits = getNumberOfDigits(num);
-     int count = 1;
      int sum = 0;
      for(int i=digits; i>=1; i--){
-       int selected = getDigit(num, count);
+       int selected = getDigit(num, (8-i));
        sum += selected*i;
        count++;
      }
